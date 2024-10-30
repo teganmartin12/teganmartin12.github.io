@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-	margin: 0.5em 0.8em 0.3em; /*Three values again. You got the idea.*/
+	margin: 2em 0.8em 0.3em; /*Three values again. You got the idea.*/
     padding: 0.5em 1em 0.2em 0.5em;
 	font-size: 1.2em;
 	color: rgb(255, 125, 4);
@@ -106,4 +106,3 @@ footer {
 
 }
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
-
