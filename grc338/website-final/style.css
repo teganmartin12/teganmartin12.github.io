@@ -1,0 +1,243 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+    margin: auto;
+}
+
+
+figcaption {
+    padding: 0.6em 1em 1em 1.4em;
+    font-family: Komet, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(83, 83, 83);
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+figure {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+    background-color: rgb(232, 214, 197);
+    margin-bottom: 1em;
+}
+
+header figure {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+header figure a img {
+    max-width: 20%;
+    height: auto; 
+    margin: 0; 
+    display: inline-block;
+}
+
+ul li{
+    list-style-type: None;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    text-align: right;
+}
+
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    background-color: rgb(135, 80, 29);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 21, 16);
+}
+
+div.home-container { 
+	background: url(home_pizza.jpeg) center center fixed;
+	max-width: 70em;
+    margin: auto;
+    background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+
+div.container {
+    max-width: 70em;
+    margin: auto;
+    background-color: rgb(255, 249, 249);
+    position: relative;
+    min-height: 100vh;
+}
+
+figure h1 a {
+    padding: 0.5em;
+    color: rgb(135, 80, 29);
+    text-decoration: none;
+    padding: 0em 0em 1em;
+    font-family: komet, sans-serif; 
+    font-weight: bold;
+    font-size: 4em;
+}
+
+h2 {
+    margin: 0.5em 0.5em 0.3em 0em;
+    font-size: 2em;
+    font-weight: bold; 
+    color: rgb(135, 80, 29);
+    font-family: "loos-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+	margin: 1.5em 0em 0.5em 0em;
+	font-size: 1.5em;
+    font-weight: bold; 
+    color: rgb(135, 80, 29);
+    font-family: "loos-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4{
+    font-weight: bold; 
+    margin: 0.5em 0.5em 0em 0em;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul li { 
+    font-family: komet, sans-serif;   
+    font-style: none;
+    list-style-type: none;
+}
+
+main{
+    padding: 1em 2em;
+    padding-bottom: 10em;
+}
+
+main.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10em;
+}
+
+
+main.menu ul li {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}	
+
+p.description {
+	grid-column: 1/2;
+	margin: 0em 0em 0.5em 0em;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.footer{
+    padding: 0em 0em 0em 1em;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.home {
+    color: rgb(255, 255, 255);
+    padding: 0em 2em 0em 0em;
+    grid-column: 1/2;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.price {
+    grid-row: 1/2;
+	grid-column: 2/2;
+	color: rgb(190, 15, 15);
+	text-align: right;
+	margin: 0.5em 0.8em 0em 0.5em;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.slogan { 
+    font-family: sans-serif;  
+    font-style: italic;  
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    padding: 2em 2em 1em 0em;
+    margin-bottom: 3em;
+    grid-column: 1/2;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+p {
+    margin: 0em 0em 0.5em 0em;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    padding: 1em 0em;
+    bottom: 0;
+    width: 100%;
+    height: 3rem; 
+    box-sizing: border-box;
+    background-color: rgb(135, 80, 29);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (min-width: 60em) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
