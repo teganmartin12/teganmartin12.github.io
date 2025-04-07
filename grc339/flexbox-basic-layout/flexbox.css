@@ -1,0 +1,81 @@
+/*CSS DOCUMENT*/
+
+div.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 60em;
+	margin : auto;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	margin: 1em;
+	}
+
+img {
+	width: 100%;
+	}
+
+figure {
+	margin: 0em;
+}
+
+header {
+	/* background-color: aqua; */
+	flex: 100%;
+}
+
+h2 {
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h3 {
+	/* background-color: crimson; */
+	margin: 0.5em 0em 0.5em 0em;
+}
+
+article {
+	/* background-color: chocolate; */
+	flex: 2 0 30em;
+}
+
+aside {
+	/* background-color: cornflowerblue; */
+	flex: 1 0 15em;
+}
+
+ol {
+	margin: 0.2em;
+	padding: 0em;
+}
+
+section {
+	background-color: rgb(230, 230, 230);
+	margin: 0em 0.5em 1em 0.5em;
+	padding: 1em;
+
+}
+
+p {
+	/* background-color: bisque; */
+	margin: 0em 0em 1em 0em;
+}
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+footer {
+	/* background-color: chartreuse; */
+	color: rgb(146, 146, 146);
+	flex: 100%;
+	bottom: 0;
+	margin-top: 1em;
+	padding: 1em 0em;
+	border-top: 1px solid rgb(146, 146, 146);
+}
