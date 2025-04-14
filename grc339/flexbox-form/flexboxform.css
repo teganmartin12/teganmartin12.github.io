@@ -19,7 +19,7 @@ section.personal-info ul li {
 	display: flex; 
 	flex-wrap: wrap;
 	margin: 1em 0;
-	/* background-color: #222; */
+	/* background-color:  #222; */
 }
 
 section.personal-info ul li label{
