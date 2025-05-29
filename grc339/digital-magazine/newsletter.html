@@ -1,0 +1,139 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <!-- You can start by deleting this line. Then, you can delete the other comments as you read them. -->
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css" /> 
+            <link rel="stylesheet" href="https://use.typekit.net/phe0uqk.css">
+            <link rel="stylesheet" href="https://use.typekit.net/phe0uqk.css">
+            <link rel="stylesheet" href="https://use.typekit.net/phe0uqk.css">
+
+            <!-- Don’t forget to link to your CSS here. -->
+            <title>Please write your name here</title> <!-- This will be replaced with the actual name of the publication later.  -->
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        </head>	
+
+        <body>
+            <div class="container">
+                
+                <header>
+                        <h1><a href="index.html"><img src="logo.png" alt="Golden Gate Adventures logo."></a></h1>
+                        <nav>
+                            <ul>
+                                <li><a href="attractions.html">Attractions</a></li>
+                                <li><a href="food.html">Food</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="history.html">History</a></li>
+                                <li><a href="transportation.html">Transportation</a></li>
+                            </ul>
+                        </nav>
+                </header>
+                    
+                <main>
+                    <form>
+                        <section class="personal-info">
+                            <h2 class="newsletter">Subscribe to our newsletter!</h2>
+                            <h3 class="newsletter">Enter your personal information.</h3>
+                            <ul>
+                                <li><label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="your full name" /></li>
+                                <li><label for="street-address">Street address:</label> <input type="text" name="street-address" id="street-address" placeholder="your street address" /></li>
+                                <li><label for="city">City:</label> <input type="text" name="city" id="city" placeholder="city" /></li>
+                                <li>
+                                    <label for="state">State:</label>
+                                    <select id="state" name="state">
+                                        <option value=""></option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">District Of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </li>
+                                <li><label for="street-address">Zip code:</label> <input type="text" name="zip-code" id="zip-code" placeholder="zip code" /></li>
+                                <li><label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="confirmation email" /></li>
+                                <li><label for="phone">Phone:</label> <input type="tel" name="phone" id="phone" placeholder="your phone number" /></li>
+                            </ul>
+                        </section>
+
+                        <section class="subscription">
+
+                            <h3 class="newsletter">Please select the type of newsletters you want to revieve.</h3>
+                            <p class="newsletter">Choose as many as you want!</p>
+                            <ul>
+                                <li><input type="checkbox" id="Features-newsletter" value="Features-newsletter" /> <label for="Features-newsletter">Features Newsletter</label></li>
+                                <li><input type="checkbox" id="barbecue-sauce" value="Announcements" /> <label for="Announcements">Announcements</label></li>
+                                <li><input type="checkbox" id="green-peppers" value="General Updates" /> <label for="General Updates">General Updates</label></li>
+                            </ul>
+                        </section>
+                        
+                        <section>
+                            <button type="subscribe">Subscribe</button>
+                        </section>
+                    </form>
+
+                </main>
+
+                <footer>
+                    <p class="footer">All rights reserved.</p>
+                </footer>
+
+               <!-- Same footer as home page. -->
+
+            </div>
+        </body>
+    </html>
+
+
