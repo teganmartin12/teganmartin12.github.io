@@ -90,6 +90,7 @@ h2{
     padding-bottom: 0.2em;
     font-family: "fraunces-variable", serif;
     font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 9, "wght" 900;
+    line-height: 1;
 }
 
 h3{
@@ -101,6 +102,7 @@ h3{
     margin: 0.5em 0em;
     font-family: "fraunces-variable", serif;
     font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 9, "wght" 900;
+    line-height: 1.1;
 }
 
 ul li{
@@ -376,5 +378,58 @@ button{
 
     section.story_with_photo a p{
         flex: 0 0 4em;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark ) {
+    div.container, div.home-container {
+        background-color: #181818;
+    }
+
+    body{
+        background-color: #181818;
+        color: #aaadd1;
+    }
+
+    aside {
+        color: #181818;
+    }
+
+    h3.aside{
+        color: #5b85aa;
+    }
+
+    section.simple_story{
+        border-top: #aaadd1;
+    }
+
+    figcaption.gallery{
+        color: #B3B3B3;
+    }
+
+    h2.newsletter{
+       color:#5b85aa; 
+    }
+
+    h3.newsletter{
+        color: #aaadd1;
+    }
+
+    p.newsletter{
+        color: #aaadd1;
+    }
+
+    p.footer{
+        color:#181818;
+    }
+
+    h1 {  
+    background-image: url("logo-dark.png");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }
+
+    h1 img{
+        opacity: 0;
     }
 }
