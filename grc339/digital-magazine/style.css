@@ -391,8 +391,12 @@ button{
         color: #aaadd1;
     }
 
-    aside {
+    p.ms_story_with_photo{
         color: #181818;
+    }
+
+    aside{
+        color: #aaadd1;
     }
 
     h3.aside{
