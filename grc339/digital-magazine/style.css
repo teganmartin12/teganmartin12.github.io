@@ -75,6 +75,21 @@ header figure a img {
     display: block;
 }
 
+header nav ul {
+    display: block;
+    text-align: left;
+}
+
+header nav ul li {
+    display: block;
+    margin: 0.5em 0;
+}
+
+header nav ul li a {
+    font-size: 1em;
+}
+
+
 h1{
     text-align: center;
     width: 10em;
@@ -232,7 +247,30 @@ div.gallery-container {
     padding: 1em;
 }
 
+.gallery-container nav ul li a {
+    font-size: 1em;
+    font-family: "fraunces-variable", serif;
+    font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 9, "wght" 900;
+    color: #cc4100;
+}
+
+.gallery-container nav ul li {
+    font-weight: bold;
+}
+
 /* newsletter css */
+
+section.subscription ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0;
+}
+
+section.subscription ul li {
+    flex: 1 0 12em;
+}
+
 h3.newsletter {
     font-size: 1.2em;
     margin-top: 1.5em;
@@ -271,7 +309,7 @@ button{
     }
 
     nav ul li {
-        display: inline;
+        /* display: inline; */
         margin-right: 1em;
     }
 }
@@ -436,4 +474,39 @@ button{
     h1 img{
         opacity: 0;
     }
+
+    @media screen and (min-width: 60em) {
+    .gallery-container nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+  main.gallery-main {
+    margin-bottom: 2em;  /* overrides 45em on mobile */
+  }
+
+  figure.gallery {
+    display: none;
+    position: static;
+    margin-top: 1em;
+  }
+
+  input:nth-of-type(1):checked ~ figure:nth-of-type(1),
+  input:nth-of-type(2):checked ~ figure:nth-of-type(2),
+  input:nth-of-type(3):checked ~ figure:nth-of-type(3),
+  input:nth-of-type(4):checked ~ figure:nth-of-type(4),
+  input:nth-of-type(5):checked ~ figure:nth-of-type(5),
+  input:nth-of-type(6):checked ~ figure:nth-of-type(6),
+  input:nth-of-type(7):checked ~ figure:nth-of-type(7),
+  input:nth-of-type(8):checked ~ figure:nth-of-type(8) {
+    display: block;
+  }
+
+  nav.gallery {
+    margin-top: 2em;
+  }
+}
+
+
 }
